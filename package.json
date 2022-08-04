@@ -1,7 +1,7 @@
 {
-  "name": "awwbot",
+  "name": "greentextbot",
   "version": "1.0.0",
-  "description": "A simple discord bot that uses intents to post pictures from r/aww",
+  "description": "A simple discord bot that uses intents to post pictures from r/greentext",
   "type": "module",
   "private": true,
   "main": "src/server.js",

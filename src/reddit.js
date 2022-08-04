@@ -1,13 +1,13 @@
 /**
  * Reach out to the reddit API, and get the first page of results from
- * r/aww. Filter out posts without readily available images or videos,
+ * r/greentext. Filter out posts without readily available images or videos,
  * and return a random result.
- * @returns The url of an image or video which is cute.
+ * @returns The url of an image or video which is a greentext.
  */
 export async function getCuteUrl() {
-  const response = await fetch('https://www.reddit.com/r/aww/hot.json', {
+  const response = await fetch('https://www.reddit.com/r/greentext/hot.json', {
     headers: {
-      'User-Agent': 'justinbeckwith:awwbot:v1.0.0 (by /u/justinblat)',
+      'User-Agent': 'd4rkr4in:greentextbot:v1.0.0 (by /u/d4rkr4in)',
     },
   });
   const data = await response.json();

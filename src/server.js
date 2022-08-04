@@ -8,7 +8,7 @@ import {
   InteractionType,
   verifyKey,
 } from 'discord-interactions';
-import { AWW_COMMAND, INVITE_COMMAND } from './commands.js';
+import { GT_COMMAND, INVITE_COMMAND } from './commands.js';
 import { getCuteUrl } from './reddit.js';
 
 class JsonResponse extends Response {
@@ -52,7 +52,7 @@ router.post('/', async (request, env) => {
   if (message.type === InteractionType.APPLICATION_COMMAND) {
     // Most user commands will come as `APPLICATION_COMMAND`.
     switch (message.data.name.toLowerCase()) {
-      case AWW_COMMAND.name.toLowerCase(): {
+      case GT_COMMAND.name.toLowerCase(): {
         console.log('handling cute request');
         const cuteUrl = await getCuteUrl();
         return new JsonResponse({

@@ -3,9 +3,9 @@
  * and registration.
  */
 
-export const AWW_COMMAND = {
-  name: 'awwww',
-  description: 'Drop some cuteness on this channel.',
+export const GT_COMMAND = {
+  name: 'greentext',
+  description: '>gets greentext.exe',
 };
 
 export const INVITE_COMMAND = {
